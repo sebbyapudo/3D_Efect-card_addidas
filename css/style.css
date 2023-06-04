@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
 }
 
 .card {
+  transform-style: preserve-3d;
   min-height: 90vh;
   width: 25rem;
   border-radius: 30px;
@@ -39,6 +41,8 @@ body {
 .sneaker img {
   width: 15rem;
   z-index: 2;
+  transition: all 0.75s ease-out;
+
 }
 
 .circle {
@@ -56,6 +60,7 @@ body {
 
 .info h1 {
   font-size: 2.5rem;
+  transition: all 0.75s ease-out;
   /* margin-bottom: 0; */
 }
 
@@ -89,6 +94,8 @@ button.active {
 
 .purchase {
   margin-top: 3rem;
+  transition: all 0.75s ease-out;
+
 }
 
 .purchase button {
